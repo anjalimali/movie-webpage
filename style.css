@@ -1,53 +1,97 @@
-a{
+a {
   color: white;
 }
-.head{
-    font-size: 4rem;
-    font-weight: 800;
-    
+
+.head {
+  font-size: 4rem;
+  font-weight: 800;
+
 }
-.navbar1{
+
+.navbar1 {
   /* transition: top 0.8s; */
   animation: fade-in 10s ease-in-out both;
 }
-.mar{
+
+.mar {
   /* margin-top: -1rem; */
   /* background-color: beige; */
   position: absolute;
   bottom: 0;
   left: 2rem;
   right: 2rem;
- 
- 
 }
 
-.back{
-  background-image:url('./images/banner-04.jpg');
-  background-position:center;
+
+.back {
+  background-image: url('./images/banner-02.jpg');
+  background-position: center;
   background-size: cover;
   position: relative;
-  height: 90vh;
-}
-.back::after{
-position: absolute;
-content: ' ';
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.351);
-/* z-index: 1; */
+  height: 70vh;
 }
 
-.index{
+.back::after {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.351);
+  /* z-index: 1; */
+}
+
+.index {
   z-index: 2;
   position: absolute;
 }
 
-
-@media screen and (max-width:768px) {
-  .navbar1{
-    display: none;
-  }
+.btn1 {
+  z-index: 2;
+  position: absolute;
 }
 
+.new1 {
+  bottom: 0;
+  left: 2rem;
+  right: 2rem;
+}
+
+.new1 {
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back2 {
+  background-image: url('/images/banner-05.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  position: relative;
+
+}
+
+/* .head1{
+  position: absolute;
+  z-index: 2;
+} */
+
+.foot a{
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: 600;
+  transition-duration: 0.4s;
+}
+
+ 
+
+@media screen and (max-width:768px) {
+  .navbar1 {
+    display: none;
+  }
+
+  .head {
+    font-size: 2rem;
+  }
+}
